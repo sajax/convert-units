@@ -13,10 +13,6 @@ tests['m/l to km/l'] = function () {
   assert.strictEqual( convert(100).from('m/l').to('km/l') , 0.1);
 };
 
-tests['m/l to l/100km'] = function () {
-  assert.strictEqual( convert(0.1).from('m/l').to('l/100km') , 10000);
-};
-
 tests['mpg to km/l'] = function () {
   var expected = 4.251
     , actual = convert(10).from('mpg').to('km/l');
